@@ -1,0 +1,24 @@
+img{
+    transform: rotateY(180deg);
+    position: relative;
+    left: 0;
+    animation: movingTaxi 4s infinite;
+}
+
+@keyframes movingTaxi{
+    0%{
+        left: 0;
+    }
+    50%{
+        left:80%;
+        transform: rotatey(180deg);
+    }
+    51%{
+        transform: rotatey(0deg);
+ 
+    }
+    100%{
+        left: 0;
+        transform: rotatey(0deg);
+    }
+}
